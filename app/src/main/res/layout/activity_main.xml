@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <ImageView
+        android:id="@+id/sensorImage"
+        android:layout_width="314dp"
+        android:layout_height="339dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Imagen del sensor de temperatura y humedad en el contenedor"
+        android:src="@drawable/climaa" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorImage"
+        android:layout_centerHorizontal="true"
+        android:text="Temperatura: 0.0 C°"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/humedadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Humedad: 0.0 %"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>
